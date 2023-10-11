@@ -35,8 +35,8 @@ export default defineType({
         of: [{type: 'image'}],
       }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
+      name: 'category',
+      title: 'Category',
       type: 'reference',
       to:{type: 'category'}
     }),
