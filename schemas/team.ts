@@ -12,6 +12,12 @@ export default defineType({
       
     }),
     defineField({
+      name: 'index',
+      title: 'Index',
+      type: 'number',
+      
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -34,6 +40,15 @@ export default defineType({
         type: 'string',
         
       })
+  ],
+  orderings: [
+    {
+      title: 'Team',
+      name: 'teamDesc',
+      by: [
+        {field: 'index', direction: 'desc'}
+      ]
+    }
   ],
   preview: {
     select: {
